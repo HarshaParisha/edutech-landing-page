@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { 
   Search, Filter, Grid, List, Calendar, Clock, 
-  TrendingUp, Zap, BookOpen, Layers, ChevronLeft, ChevronRight
+  TrendingUp, Zap, BookOpen, Layers, ChevronLeft, ChevronRight, Archive
 } from 'react-feather';
 import GradientBackground from '../components/GradientBackground';
 
 const BlogsPage = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [filterTab, setFilterTab] = useState('Featured');
+  const [filterTab, setFilterTab] = useState('All');
   const [viewMode, setViewMode] = useState('grid');
   const [sortBy, setSortBy] = useState('Most Recent');
   const [currentPage, setCurrentPage] = useState(1);
@@ -109,17 +109,27 @@ const BlogsPage = () => {
   ];
 
   const categories = ['All', 'UI/UX', 'Frontend', 'Backend', 'Data', 'Cloud', 'Security', 'AI/ML'];
-  const filterTabs = ['Featured', 'New', 'Case Studies', 'Tutorials'];
+  const filterTabs = ['All', 'Featured', 'New', 'Case Studies', 'Tutorials'];
 
   // Filter blogs
   const filteredBlogs = allBlogs.filter(blog => {
     const matchesSearch = blog.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                          blog.description.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesCategory = selectedCategory === 'All' || blog.category === selectedCategory;
-    const matchesTab = filterTab === 'Featured' ? blog.featured :
-                      filterTab === 'New' ? blog.new :
-                      filterTab === 'Case Studies' ? blog.caseStudy :
-                      filterTab === 'Tutorials' ? blog.tutorial : true;
+    
+    // Fix the filter tab logic
+    let matchesTab = true;
+    if (filterTab === 'All') {
+      matchesTab = true;
+    } else if (filterTab === 'Featured') {
+      matchesTab = blog.featured === true;
+    } else if (filterTab === 'New') {
+      matchesTab = blog.new === true;
+    } else if (filterTab === 'Case Studies') {
+      matchesTab = blog.caseStudy === true;
+    } else if (filterTab === 'Tutorials') {
+      matchesTab = blog.tutorial === true;
+    }
     
     return matchesSearch && matchesCategory && matchesTab;
   });
@@ -135,7 +145,7 @@ const BlogsPage = () => {
       <GradientBackground />
       
       <div className="relative z-10 pt-24 pb-12">
-        <div className="container-custom">
+        <div className="container-custom max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="mb-8">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Latest Blogs</h1>
@@ -168,6 +178,7 @@ const BlogsPage = () => {
                       : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                   }`}
                 >
+                  {tab === 'All' && <Archive size={16} />}
                   {tab === 'Featured' && <TrendingUp size={16} />}
                   {tab === 'New' && <Zap size={16} />}
                   {tab === 'Case Studies' && <Layers size={16} />}

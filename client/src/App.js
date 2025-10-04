@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import ModernNavbar from './components/ModernNavbar';
 import Footer from './components/Footer';
@@ -29,6 +29,7 @@ const AppContent = () => {
       <Routes>
         <Route path="/" element={<><main><HomePage /></main><Footer /></>} />
         <Route path="/courses" element={<CoursesPage />} />
+        <Route path="/blogs" element={<BlogsPage />} />
         <Route path="/leaderboard" element={<LeaderboardPage />} />
         <Route path="/quizzes" element={<QuizzesPage />} />
         <Route path="/contact" element={<ContactPage />} />
@@ -39,6 +40,7 @@ const AppContent = () => {
         <Route path="/my-courses" element={<MyCoursesPage />} />
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="/security" element={<SecurityPage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <AIAssistant />
     </div>

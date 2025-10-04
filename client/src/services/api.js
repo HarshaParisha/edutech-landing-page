@@ -160,6 +160,7 @@ export const fetchWithFallback = async (apiCall, fallbackData) => {
     }
     // In development or when using mock data
     return fallbackData;
+  } catch (error) {
     console.error('API Error:', error.message);
     return fallbackData;
   }

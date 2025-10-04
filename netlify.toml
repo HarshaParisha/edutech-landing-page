@@ -4,10 +4,20 @@
   command = "cd client && npm install && npm run build"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "16"
   NPM_VERSION = "9"
   CI = "false"
   NPM_FLAGS = "--legacy-peer-deps"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/proxy/:splat"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/*"
@@ -15,11 +25,11 @@
   status = 200
 
 [context.production.environment]
-  REACT_APP_API_URL = "https://edutech-api.netlify.app/api"
+  REACT_APP_API_URL = "/.netlify/functions/proxy/api"
   REACT_APP_APP_NAME = "EduTech Platform"
 
 [context.deploy-preview.environment]
-  REACT_APP_API_URL = "https://edutech-api-staging.netlify.app/api"
+  REACT_APP_API_URL = "/.netlify/functions/proxy/api"
   REACT_APP_APP_NAME = "EduTech Platform (Preview)"
 
 [context.branch-deploy.environment]

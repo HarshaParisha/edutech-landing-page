@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Mitchell",
+    "role": "Software Engineer at Google",
+    "avatar": "https://i.pravatar.cc/150?img=32",
+    "testimonial": "EduTech transformed my career! The courses are practical, engaging, and taught by industry experts. I landed my dream job within 3 months of completing the Full Stack program.",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Rahul Verma",
+    "role": "Data Scientist at Microsoft",
+    "avatar": "https://i.pravatar.cc/150?img=60",
+    "testimonial": "The Machine Learning course exceeded my expectations. The hands-on projects and mentorship helped me transition from finance to tech seamlessly.",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Emily Chen",
+    "role": "UX Designer at Airbnb",
+    "avatar": "https://i.pravatar.cc/150?img=44",
+    "testimonial": "Best investment in my career! The UI/UX Masterclass taught me design thinking and Figma skills that I use daily. The community support is incredible.",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "name": "James Rodriguez",
+    "role": "Mobile Developer at Uber",
+    "avatar": "https://i.pravatar.cc/150?img=15",
+    "testimonial": "I went from zero coding knowledge to building my own apps in just 10 weeks. The instructors are patient, knowledgeable, and truly care about student success.",
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "name": "Aisha Khan",
+    "role": "Marketing Manager at Shopify",
+    "avatar": "https://i.pravatar.cc/150?img=41",
+    "testimonial": "The Digital Marketing Bootcamp gave me practical skills I could apply immediately. My campaigns now perform 3x better. Highly recommend!",
+    "rating": 5
+  }
+]

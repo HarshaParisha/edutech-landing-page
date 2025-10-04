@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "10 Tips to Boost Your Learning Productivity",
+    "preview": "Discover proven strategies to maximize your study time and retain information more effectively. Learn from top performers...",
+    "thumbnail": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop",
+    "author": "Sarah Johnson",
+    "date": "2025-09-28",
+    "category": "Productivity",
+    "readTime": "5 min read"
+  },
+  {
+    "id": 2,
+    "title": "The Future of AI in Education",
+    "preview": "Explore how artificial intelligence is transforming the learning experience and personalizing education for millions...",
+    "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=250&fit=crop",
+    "author": "Michael Chen",
+    "date": "2025-09-25",
+    "category": "Technology",
+    "readTime": "7 min read"
+  },
+  {
+    "id": 3,
+    "title": "Career Paths in Tech: A Complete Guide",
+    "preview": "Navigate your tech career with insights on software engineering, data science, UX design, and emerging roles...",
+    "thumbnail": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop",
+    "author": "Emily Rodriguez",
+    "date": "2025-09-22",
+    "category": "Career",
+    "readTime": "10 min read"
+  },
+  {
+    "id": 4,
+    "title": "Mastering Remote Learning: Best Practices",
+    "preview": "Create an effective home learning environment and develop habits that lead to success in online education...",
+    "thumbnail": "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=400&h=250&fit=crop",
+    "author": "David Kim",
+    "date": "2025-09-20",
+    "category": "Learning",
+    "readTime": "6 min read"
+  },
+  {
+    "id": 5,
+    "title": "Why Soft Skills Matter More Than Ever",
+    "preview": "Technical skills open doors, but soft skills keep them open. Learn why communication and teamwork are crucial...",
+    "thumbnail": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop",
+    "author": "Lisa Anderson",
+    "date": "2025-09-18",
+    "category": "Skills",
+    "readTime": "5 min read"
+  },
+  {
+    "id": 6,
+    "title": "Building Your Personal Brand Online",
+    "preview": "Stand out in the digital age by crafting a compelling online presence that showcases your unique value...",
+    "thumbnail": "https://images.unsplash.com/photo-1432888622747-4eb9a8f2c293?w=400&h=250&fit=crop",
+    "author": "James Wilson",
+    "date": "2025-09-15",
+    "category": "Career",
+    "readTime": "8 min read"
+  }
+]

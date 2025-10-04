@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "JavaScript Fundamentals",
+    "description": "Test your knowledge of core JavaScript concepts",
+    "questions": 20,
+    "duration": "30 min",
+    "difficulty": "Intermediate",
+    "completed": 75,
+    "icon": "code"
+  },
+  {
+    "id": 2,
+    "title": "React.js Essentials",
+    "description": "Master React components, hooks, and state management",
+    "questions": 25,
+    "duration": "40 min",
+    "difficulty": "Advanced",
+    "completed": 45,
+    "icon": "layers"
+  },
+  {
+    "id": 3,
+    "title": "Python Basics",
+    "description": "Learn Python syntax and fundamental programming concepts",
+    "questions": 15,
+    "duration": "25 min",
+    "difficulty": "Beginner",
+    "completed": 90,
+    "icon": "terminal"
+  },
+  {
+    "id": 4,
+    "title": "Data Structures & Algorithms",
+    "description": "Challenge yourself with DSA problems and solutions",
+    "questions": 30,
+    "duration": "60 min",
+    "difficulty": "Advanced",
+    "completed": 30,
+    "icon": "git-branch"
+  },
+  {
+    "id": 5,
+    "title": "Web Design Principles",
+    "description": "Understand UI/UX fundamentals and design thinking",
+    "questions": 18,
+    "duration": "35 min",
+    "difficulty": "Intermediate",
+    "completed": 60,
+    "icon": "layout"
+  },
+  {
+    "id": 6,
+    "title": "Database Management",
+    "description": "SQL queries, normalization, and database design",
+    "questions": 22,
+    "duration": "45 min",
+    "difficulty": "Intermediate",
+    "completed": 50,
+    "icon": "database"
+  },
+  {
+    "id": 7,
+    "title": "Cloud Computing Basics",
+    "description": "AWS, Azure, and cloud architecture fundamentals",
+    "questions": 20,
+    "duration": "40 min",
+    "difficulty": "Intermediate",
+    "completed": 40,
+    "icon": "cloud"
+  },
+  {
+    "id": 8,
+    "title": "Cybersecurity Essentials",
+    "description": "Network security, encryption, and ethical hacking",
+    "questions": 25,
+    "duration": "50 min",
+    "difficulty": "Advanced",
+    "completed": 25,
+    "icon": "shield"
+  },
+  {
+    "id": 9,
+    "title": "Machine Learning Intro",
+    "description": "ML algorithms, models, and practical applications",
+    "questions": 28,
+    "duration": "55 min",
+    "difficulty": "Advanced",
+    "completed": 20,
+    "icon": "cpu"
+  },
+  {
+    "id": 10,
+    "title": "Digital Marketing",
+    "description": "SEO, content marketing, and social media strategies",
+    "questions": 16,
+    "duration": "30 min",
+    "difficulty": "Beginner",
+    "completed": 80,
+    "icon": "trending-up"
+  }
+]

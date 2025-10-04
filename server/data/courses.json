@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Full Stack Web Development",
+    "description": "Master modern web development with React, Node.js, and MongoDB",
+    "category": "Popular",
+    "thumbnail": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop",
+    "duration": "12 weeks",
+    "level": "Intermediate",
+    "students": 2847,
+    "rating": 4.8,
+    "price": "$299"
+  },
+  {
+    "id": 2,
+    "title": "Data Science & Machine Learning",
+    "description": "Learn Python, ML algorithms, and data visualization techniques",
+    "category": "Trending",
+    "thumbnail": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
+    "duration": "16 weeks",
+    "level": "Advanced",
+    "students": 1923,
+    "rating": 4.9,
+    "price": "$399"
+  },
+  {
+    "id": 3,
+    "title": "UI/UX Design Masterclass",
+    "description": "Create stunning user interfaces with Figma and design thinking",
+    "category": "Popular",
+    "thumbnail": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop",
+    "duration": "8 weeks",
+    "level": "Beginner",
+    "students": 3421,
+    "rating": 4.7,
+    "price": "$199"
+  },
+  {
+    "id": 4,
+    "title": "Mobile App Development",
+    "description": "Build native iOS and Android apps with React Native",
+    "category": "New",
+    "thumbnail": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop",
+    "duration": "10 weeks",
+    "level": "Intermediate",
+    "students": 1567,
+    "rating": 4.6,
+    "price": "$349"
+  },
+  {
+    "id": 5,
+    "title": "Digital Marketing Bootcamp",
+    "description": "Master SEO, social media, and content marketing strategies",
+    "category": "Trending",
+    "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop",
+    "duration": "6 weeks",
+    "level": "Beginner",
+    "students": 2134,
+    "rating": 4.5,
+    "price": "$149"
+  },
+  {
+    "id": 6,
+    "title": "Cloud Computing with AWS",
+    "description": "Deploy scalable applications on Amazon Web Services",
+    "category": "New",
+    "thumbnail": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=250&fit=crop",
+    "duration": "10 weeks",
+    "level": "Advanced",
+    "students": 987,
+    "rating": 4.8,
+    "price": "$379"
+  },
+  {
+    "id": 7,
+    "title": "Cybersecurity Fundamentals",
+    "description": "Learn ethical hacking and network security essentials",
+    "category": "Popular",
+    "thumbnail": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400&h=250&fit=crop",
+    "duration": "12 weeks",
+    "level": "Intermediate",
+    "students": 1654,
+    "rating": 4.7,
+    "price": "$329"
+  },
+  {
+    "id": 8,
+    "title": "Blockchain & Cryptocurrency",
+    "description": "Understand blockchain technology and smart contracts",
+    "category": "Trending",
+    "thumbnail": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=250&fit=crop",
+    "duration": "8 weeks",
+    "level": "Advanced",
+    "students": 876,
+    "rating": 4.6,
+    "price": "$399"
+  },
+  {
+    "id": 9,
+    "title": "Python Programming Basics",
+    "description": "Start your coding journey with Python fundamentals",
+    "category": "New",
+    "thumbnail": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=250&fit=crop",
+    "duration": "6 weeks",
+    "level": "Beginner",
+    "students": 4231,
+    "rating": 4.9,
+    "price": "$99"
+  }
+]

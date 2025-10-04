@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Michael Stevens",
+    "role": "Founder & CEO",
+    "tagline": "Former Stanford Professor | EdTech Visionary",
+    "avatar": "https://i.pravatar.cc/200?img=12",
+    "linkedin": "#"
+  },
+  {
+    "id": 2,
+    "name": "Priya Kapoor",
+    "role": "Chief Learning Officer",
+    "tagline": "15+ Years in Curriculum Design",
+    "avatar": "https://i.pravatar.cc/200?img=45",
+    "linkedin": "#"
+  },
+  {
+    "id": 3,
+    "name": "David Park",
+    "role": "Head of Engineering",
+    "tagline": "Ex-Google | Full Stack Expert",
+    "avatar": "https://i.pravatar.cc/200?img=33",
+    "linkedin": "#"
+  },
+  {
+    "id": 4,
+    "name": "Sofia Martinez",
+    "role": "Lead UX Designer",
+    "tagline": "Award-Winning Designer | Apple Alumni",
+    "avatar": "https://i.pravatar.cc/200?img=47",
+    "linkedin": "#"
+  },
+  {
+    "id": 5,
+    "name": "Raj Malhotra",
+    "role": "Data Science Lead",
+    "tagline": "PhD in AI | Published Researcher",
+    "avatar": "https://i.pravatar.cc/200?img=51",
+    "linkedin": "#"
+  },
+  {
+    "id": 6,
+    "name": "Emma Thompson",
+    "role": "Community Manager",
+    "tagline": "Building Connections | Student Success",
+    "avatar": "https://i.pravatar.cc/200?img=23",
+    "linkedin": "#"
+  },
+  {
+    "id": 7,
+    "name": "Carlos Rivera",
+    "role": "Marketing Director",
+    "tagline": "Growth Hacker | Brand Strategist",
+    "avatar": "https://i.pravatar.cc/200?img=68",
+    "linkedin": "#"
+  },
+  {
+    "id": 8,
+    "name": "Yuki Tanaka",
+    "role": "Senior Instructor",
+    "tagline": "Web Dev Expert | 10K+ Students Taught",
+    "avatar": "https://i.pravatar.cc/200?img=29",
+    "linkedin": "#"
+  }
+]

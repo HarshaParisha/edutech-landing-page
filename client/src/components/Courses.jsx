@@ -1,6 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { Clock, Users, Star, ArrowRight } from 'react-feather';
+import { Clock, Users, Star, ArrowRight, BookOpen } from 'react-feather';
 import { getCourses } from '../services/api';
+
+// Fallback course card component
+const CourseCardSkeleton = () => (
+  <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+    <div className="h-48 bg-gray-200 animate-pulse"></div>
+    <div className="p-6">
+      <div className="h-6 bg-gray-200 rounded w-3/4 mb-4"></div>
+      <div className="h-4 bg-gray-200 rounded w-1/2 mb-2"></div>
+      <div className="flex items-center mt-4">
+        <div className="h-4 bg-gray-200 rounded w-1/4"></div>
+        <div className="ml-4 h-4 bg-gray-200 rounded w-1/4"></div>
+      </div>
+    </div>
+  </div>
+);
 
 const Courses = () => {
   const [courses, setCourses] = useState([]);
@@ -16,12 +31,14 @@ const Courses = () => {
 
   const fetchCourses = async () => {
     try {
-      const response = await getCourses();
-      setCourses(response.data);
-      setFilteredCourses(response.data);
-      setLoading(false);
+      const data = await getCourses();
+      // Ensure we have an array and it's not empty
+      const coursesData = Array.isArray(data) ? data : [];
+      setCourses(coursesData);
+      setFilteredCourses(coursesData);
     } catch (error) {
       console.error('Error fetching courses:', error);
+    } finally {
       setLoading(false);
     }
   };
@@ -38,8 +55,13 @@ const Courses = () => {
   if (loading) {
     return (
       <section id="courses" className="py-20 bg-gray-50">
-        <div className="container-custom text-center">
-          <div className="animate-pulse">Loading courses...</div>
+        <div className="container-custom">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Explore Our Courses</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[1, 2, 3].map((i) => (
+              <CourseCardSkeleton key={i} />
+            ))}
+          </div>
         </div>
       </section>
     );

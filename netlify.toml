@@ -1,12 +1,13 @@
 [build]
-  base = "client"
-  publish = "build"
-  command = "npm install && npm run build"
+  base = "."
+  publish = "client/build"
+  command = "cd client && npm install && npm run build"
 
 [build.environment]
   NODE_VERSION = "18"
   NPM_VERSION = "9"
   CI = "false"
+  NPM_FLAGS = "--legacy-peer-deps"
 
 [[redirects]]
   from = "/*"
